@@ -1,0 +1,116 @@
+.theme {
+  padding: 45px 0px 40px 0;
+  .section-title {
+    margin-bottom: 20px;
+  }
+  &-filter {
+    background-color: #f5f5f5;
+    padding: 10px 16px;
+    margin-bottom: 24px;
+
+    &__form {
+      width: 75%;
+      padding-left: 16px;
+      .form-group {
+        width: 33.33%;
+        @media screen and (min-width: 768px) {
+          &:not(:last-child) {
+            padding-right: 16px;
+          }
+        }
+      }
+      @media screen and (max-width: 1199px) {
+        width: 100%;
+        padding-left: 0;
+        margin: 15px 0 10px 0;
+      }
+      @media screen and (max-width: 767px) {
+        .form-group {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  &-carousel-control {
+    margin-left: auto;
+    @media screen and (max-width: 1023px) {
+      margin: 0 auto;
+      background-color: #e5e5e5;
+      padding: 5px 10px;
+    }
+    .theme-carousel-number {
+      margin-right: 12px;
+    }
+  }
+  &-carousel-btn {
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    color: #999999;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    &:active {
+      transform: scale(0.9);
+    }
+    &:not(:last-child) {
+      margin-right: 4px;
+    }
+    @media (hover) {
+      &:hover {
+        background-color: #eaeaea;
+      }
+    }
+  }
+}
+
+.theme-list {
+  margin-bottom: 38px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 0px;
+  }
+  &-carousel {
+    .theme-item {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .row {
+  }
+}
+
+.theme-item {
+  &__thumbnail {
+    padding-bottom: 126%;
+    display: block;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    transition: 3s;
+    &:hover {
+      background-position: bottom;
+    }
+  }
+  &__name {
+    margin-bottom: 12px;
+    --lh: 24;
+    --line: 2;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--line) !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: var(--lh) px;
+    max-height: calc(var(--lh) * var(--line));
+    a {
+      color: #000;
+    }
+    &:hover a {
+      color: var(--primary-color);
+    }
+  }
+}
