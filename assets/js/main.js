@@ -27,6 +27,7 @@ let setHeight = function setSameHeight(h, cl) {
 function showSearchForm() {
     $('.header__search-icon').click(function () {
         $('.header__search-form').toggleClass('active')
+        $('#header-search').first().focus()
     })
 
     $(document).mouseup(function (e) {

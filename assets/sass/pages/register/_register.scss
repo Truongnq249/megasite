@@ -8,15 +8,28 @@
     background-color: #fff;
     padding: 30px;
     border-radius: 8px;
+    border: 1px solid var(--secondary-color);
+    @media screen and (min-width: 1200px) {
+      width: 93.5%;
+    }
     &-wrapper {
       @media screen and (max-width: 1023px) {
         margin: 0 auto;
         float: unset;
       }
     }
-    .section-title {
+    &-title {
+      font-size: 2.6rem;
       margin-bottom: 30px;
+      @media screen and (max-width: 1023px) {
+        font-size: 2.3rem;
+      }
+      @media screen and (max-width: 767px) {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
     }
+
     form {
       textarea,
       select,

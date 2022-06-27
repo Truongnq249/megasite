@@ -157,6 +157,10 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box; }
 
+::selection {
+  color: #fff;
+  background-color: var(--primary-color); }
+
 *,
 *:before,
 *:after {
@@ -770,6 +774,12 @@ input:focus {
     padding: 20px 9px 20px 16px;
     border-bottom: 1px solid #eaeaea;
     margin-bottom: 16px; }
+    .option-item__content h2,
+    .option-item__content h3,
+    .option-item__content h4,
+    .option-item__content h5,
+    .option-item__content h6 {
+      font-weight: 600; }
     .option-item__content ul {
       list-style: none;
       padding-left: 0; }
@@ -855,13 +865,25 @@ input:focus {
   .register__form {
     background-color: #fff;
     padding: 30px;
-    border-radius: 8px; }
+    border-radius: 8px;
+    border: 1px solid var(--secondary-color); }
+    @media screen and (min-width: 1200px) {
+      .register__form {
+        width: 93.5%; } }
     @media screen and (max-width: 1023px) {
       .register__form-wrapper {
         margin: 0 auto;
         float: unset; } }
-    .register__form .section-title {
+    .register__form-title {
+      font-size: 2.6rem;
       margin-bottom: 30px; }
+      @media screen and (max-width: 1023px) {
+        .register__form-title {
+          font-size: 2.3rem; } }
+      @media screen and (max-width: 767px) {
+        .register__form-title {
+          font-size: 2rem;
+          margin-bottom: 20px; } }
     .register__form form textarea,
     .register__form form select,
     .register__form form input {
@@ -1027,6 +1049,7 @@ input:focus {
       color: #fff;
       width: 27px;
       height: 27px;
+      font-size: 1.1rem;
       background-color: var(--secondary-color); }
       .footer__social a:hover {
         background-color: var(--primary-color); }
