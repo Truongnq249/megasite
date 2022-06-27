@@ -78,8 +78,9 @@ function carousel() {
         onTranslated: counter,
         responsive: {
             0: {
-                items: 1,
-                rows: 2 //custom option not used by Owl Carousel, but used by the algorithm below
+                items: 2,
+                rows: 2,
+                margin: 15,
             },
             425: {
                 items: 2,
@@ -87,11 +88,11 @@ function carousel() {
             },
             768: {
                 items: 3,
-                rows: 3 //custom option not used by Owl Carousel, but used by the algorithm below
+                rows: 3
             },
             991: {
                 items: 5,
-                rows: 5//custom option not used by Owl Carousel, but used by the algorithm below
+                rows: 5
             }
         }
     };

@@ -231,6 +231,9 @@ input:focus {
   @media screen and (max-width: 767px) {
     .section-title {
       font-size: 2.3rem; } }
+  @media screen and (max-width: 424px) {
+    .section-title {
+      font-size: 2.1rem; } }
 
 .section-desc {
   font-size: 1.8rem; }
@@ -722,6 +725,9 @@ input:focus {
     color: #000; }
   .theme-item__name:hover a {
     color: var(--primary-color); }
+@media screen and (max-width: 767px) {
+  .theme-item .button {
+    font-size: 1.4rem; } }
 
 /** STRUCTURE **/
 .option {
@@ -861,6 +867,7 @@ input:focus {
       color: #2c2c2c;
       line-height: 1.4;
       outline: none;
+      background-color: #fff;
       -webkit-appearance: none;
       -moz-appearance: none; }
       .register__form form textarea::placeholder,

@@ -113,4 +113,9 @@
       color: var(--primary-color);
     }
   }
+  .button {
+    @media screen and (max-width: 767px) {
+      font-size: 1.4rem;
+    }
+  }
 }
