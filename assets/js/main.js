@@ -4,7 +4,7 @@
         $(document).ready(function () {
             showSearchForm();
             menuMobile()
-            footerAccordion()
+            footerAccordionMobile()
             carousel()
             structureToggleMobile()
             backToTop()
@@ -52,11 +52,11 @@ function menuMobile() {
 }
 
 
-function footerAccordion() {
+function footerAccordionMobile() {
     if ($(window).width() < 767) {
         $('.footer__item-title').click(function () {
             $(this).toggleClass('clicked');
-            $(this).next('.footer__item-accordion-inner').toggle();
+            $(this).next('.footer__item-accordion-inner').slideToggle();
         })
     }
 }

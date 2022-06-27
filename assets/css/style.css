@@ -233,7 +233,7 @@ input:focus {
       font-size: 2.3rem; } }
   @media screen and (max-width: 424px) {
     .section-title {
-      font-size: 2.1rem; } }
+      font-size: 2rem; } }
 
 .section-desc {
   font-size: 1.8rem; }
@@ -393,7 +393,8 @@ input:focus {
   cursor: pointer;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  z-index: 5555; }
   .back-to-top:hover {
     background-color: #c66500; }
   .back-to-top.active {

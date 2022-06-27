@@ -12,7 +12,7 @@
     font-size: 2.3rem;
   }
   @media screen and (max-width: 424px) {
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
 }
 
@@ -216,6 +216,7 @@
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  z-index: 5555;
   &:hover {
     background-color: #c66500;
   }
