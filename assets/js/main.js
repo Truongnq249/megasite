@@ -72,8 +72,7 @@ function carousel() {
         margin: 30,
         nav: false,
         dots: false,
-        loop: false,
-        slideBy: 'page',
+        slideBy: 1,
         onInitialized: counter,
         onTranslated: counter,
         responsive: {

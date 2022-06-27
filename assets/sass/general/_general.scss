@@ -95,10 +95,10 @@
   }
   &-inner {
     width: 100%;
-    padding: 100px 65px 100px 120px;
+    padding: 100px 0 100px 0;
     min-height: 700px;
     @media screen and (max-width: 1199px) {
-      padding: 150px 20px;
+      padding: 150px 0;
     }
     @media screen and (max-width: 1439px) {
       min-height: 600px;
@@ -108,16 +108,19 @@
     }
     @media screen and (max-width: 1023px) {
       min-height: 400px;
-      padding: 60px 20px;
+      padding: 60px 0;
     }
     @media screen and (max-width: 767px) {
-      padding: 40px 20px;
+      padding: 40px 0;
       min-height: unset;
     }
   }
   &__content {
-    width: 33.5%;
+    width: 44.5%;
     height: 100%;
+    @media screen and (max-width: 1199px) {
+      width: 50%;
+    }
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }

@@ -106,11 +106,12 @@
     text-overflow: ellipsis;
     line-height: var(--lh) px;
     max-height: calc(var(--lh) * var(--line));
-    a {
-      color: #000;
-    }
-    &:hover a {
+    color: #000;
+    &:hover {
       color: var(--primary-color);
+    }
+    a {
+      color: currentColor;
     }
   }
   .button {

@@ -298,11 +298,11 @@ input:focus {
     object-fit: cover; }
   .page-banner-inner {
     width: 100%;
-    padding: 100px 65px 100px 120px;
+    padding: 100px 0 100px 0;
     min-height: 700px; }
     @media screen and (max-width: 1199px) {
       .page-banner-inner {
-        padding: 150px 20px; } }
+        padding: 150px 0; } }
     @media screen and (max-width: 1439px) {
       .page-banner-inner {
         min-height: 600px; } }
@@ -312,14 +312,17 @@ input:focus {
     @media screen and (max-width: 1023px) {
       .page-banner-inner {
         min-height: 400px;
-        padding: 60px 20px; } }
+        padding: 60px 0; } }
     @media screen and (max-width: 767px) {
       .page-banner-inner {
-        padding: 40px 20px;
+        padding: 40px 0;
         min-height: unset; } }
   .page-banner__content {
-    width: 33.5%;
+    width: 44.5%;
     height: 100%; }
+    @media screen and (max-width: 1199px) {
+      .page-banner__content {
+        width: 50%; } }
     @media screen and (max-width: 767px) {
       .page-banner__content {
         margin-bottom: 30px; } }
@@ -503,7 +506,8 @@ input:focus {
     margin-bottom: 4px; }
   .step-item__content span {
     color: var(--grey2);
-    line-height: 1.29; }
+    line-height: 1.29;
+    display: inline-block; }
 
 /* Header
 --------------------------------------------- */
@@ -721,11 +725,12 @@ input:focus {
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: var(--lh) px;
-  max-height: calc(var(--lh) * var(--line)); }
-  .theme-item__name a {
-    color: #000; }
-  .theme-item__name:hover a {
+  max-height: calc(var(--lh) * var(--line));
+  color: #000; }
+  .theme-item__name:hover {
     color: var(--primary-color); }
+  .theme-item__name a {
+    color: currentColor; }
 @media screen and (max-width: 767px) {
   .theme-item .button {
     font-size: 1.4rem; } }
@@ -825,7 +830,7 @@ input:focus {
       .price td img {
         width: 20px; } }
   .price td:not(:first-child) {
-    width: 13%;
+    width: 13.2%;
     font-size: 2.4rem; }
     @media screen and (max-width: 1023px) {
       .price td:not(:first-child) {
@@ -923,7 +928,8 @@ input:focus {
         margin-bottom: 0; } }
   .footer__copyright {
     font-size: 1.6rem;
-    margin-top: auto; }
+    margin-top: auto;
+    font-weight: 600; }
     @media screen and (max-width: 767px) {
       .footer__copyright {
         margin-bottom: 15px; } }
