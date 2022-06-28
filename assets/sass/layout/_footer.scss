@@ -1,20 +1,10 @@
 /** FOOTER **/
 .footer {
   padding: 50px 0 40px 0;
-  font-weight: 500;
-  @media screen and (max-width: 767px) {
-    padding-bottom: 20px;
-  }
   .row {
-    @media screen and (max-width: 767px) {
-      --gutter: 15px;
-    }
   }
   &__intro {
     height: 100%;
-    @media screen and (max-width: 767px) {
-      margin-bottom: 20px;
-    }
   }
   &__logo {
     img {
@@ -28,79 +18,27 @@
 
   &__description {
     line-height: 1.2;
-    @media screen and (max-width: 767px) {
-      margin-bottom: 0;
-    }
   }
   &__copyright {
     font-size: 1.6rem;
     margin-top: auto;
     font-weight: 600;
-    @media screen and (max-width: 767px) {
-      margin-bottom: 15px;
-    }
   }
   &__item {
-    padding: 0 50px;
+    padding: 0 45px;
     height: 100%;
-    @media screen and (max-width: 1365px) {
-      padding: 0px 20px;
-    }
-    @media screen and (max-width: 1199px) {
-      padding: 0;
-    }
-
     &-title {
       font-size: 2.5rem;
       margin-bottom: 25px;
       line-height: 1.3;
-      @media screen and (max-width: 1199px) {
-        font-size: 2rem;
-        margin-bottom: 15px;
-      }
-      @media screen and (max-width: 767px) {
-        font-size: 1.8rem;
-      }
     }
     &-accordion {
-      @media screen and (max-width: 767px) {
-        .footer__item-title {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          &:after {
-            display: block;
-            content: "";
-            width: 10px;
-            height: 10px;
-            background-image: url("data:image/svg+xml,%3Csvg width='68' height='41' viewBox='0 0 68 41' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M66.1332 11.6594L39.0681 38.9927C37.5562 40.338 35.8101 41 34.0639 41C32.3178 41 30.5759 40.3327 29.245 38.998L2.17997 11.6647C0.0408321 9.71615 -0.542717 6.76927 0.512203 4.22813C1.56712 1.68698 4.05387 0 6.80723 0H61.129C63.8845 0 66.3717 1.66157 67.4279 4.21745C68.4841 6.77333 68.0922 9.71615 66.1332 11.6594Z' fill='%23006CB6'/%3E%3C/svg%3E%0A");
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-          }
-          &.clicked:after {
-            transform: rotate(180deg);
-          }
-        }
-      }
       &-inner {
-        @media screen and (max-width: 767px) {
-          display: none;
-        }
       }
     }
   }
   &__menu {
     &:after {
-      @media screen and (min-width: 1024px) {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 1px;
-        right: -15px;
-        top: 5px;
-        background-color: var(--secondary-color);
-      }
     }
 
     li {
@@ -156,9 +94,6 @@
   }
   &__social {
     margin-top: 47px;
-    @media screen and (max-width: 767px) {
-      margin-top: 30px;
-    }
     &-list {
       margin-bottom: -10px;
     }

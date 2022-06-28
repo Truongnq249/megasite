@@ -1,8 +1,5 @@
 .option {
   padding: 40px 0 64px 0;
-  @media screen and (max-width: 767px) {
-    padding: 40px 0px 35px;
-  }
   .section-title {
     margin-bottom: 8px;
   }
@@ -22,9 +19,6 @@
       padding: 20px 0 0 0;
       border: 1px solid var(--secondary-color);
       border-radius: 0 0 8px 8px;
-      @media screen and (max-width: 767px) {
-        padding-bottom: 0;
-      }
     }
     &__image {
       margin-bottom: 30px;
@@ -33,9 +27,6 @@
     }
     &-inner {
       padding-bottom: 16px;
-      @media screen and (max-width: 1199px) {
-        display: none;
-      }
     }
     &__content {
       padding: 20px 9px 20px 16px;

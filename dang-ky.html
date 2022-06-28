@@ -8,7 +8,9 @@
     <title>Đăng ký</title>
 
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./assets/icon/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./assets/carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/carousel/owl.theme.default.min.css">
@@ -16,7 +18,7 @@
 
 <body>
     <header class="header">
-        <div class="container-fluid">
+        <div class="header-container container-fluid">
             <div class="header-inner d-flex flex-wrap align-items-center">
                 <div class="header__bars hidden-md hidden-lg">
                     <i class="fa-solid fa-bars"></i>
@@ -82,11 +84,10 @@
         </div>
     </section>
 
-
-    <section class="register bg-cover" style="background-image: url(./assets/image/register.jpg)">
+    <section class="register bg-cover">
         <div class="register-container container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5 register__form-wrapper">
+            <div class="row d-flex flex-wrap register-container-inner">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 register__form-wrapper">
                     <div class="register__form">
                         <h2 class="register__form-title fw-bold text-center text-primary text-uppercase">Đăng ký tư vấn
                             miễn
@@ -128,100 +129,110 @@
                         </form>
                     </div>
                 </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 hidden-xs">
+                    <div class="register__image position-relative">
+                        <img src="./assets/image/register-girl.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
-
 
     <section class="register-step">
-        <div class="container">
-            <h2 class="section-title text-secondary fw-bold text-uppercase text-center">QUY TRÌNH LÀM VIỆC SAU KHI ĐĂNG
-                KÝ</h2>
-            <div class="row d-flex flex-wrap align-items-center gutter-y-30">
-                <div class="col-xs-12 col-sm-6">
-                    <div class="d-flex register-group flex-column align-items-center">
-                        <img src="assets/image/process.png" alt="">
+        <div class="register-step-container container">
+            <div class="register-step-container-inner">
+                <h2 class="section-title text-secondary fw-bold text-uppercase text-center">QUY TRÌNH LÀM VIỆC SAU KHI
+                    ĐĂNG
+                    KÝ</h2>
+                <div class="row d-flex flex-wrap align-items-center gutter-y-30">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="d-flex register-group flex-column align-items-center">
+                            <img src="assets/image/process.png" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                    <div class="step-list">
-                        <div class="step-item d-flex">
-                            <div
-                                class="step-item__number fw-semibold img-circle d-flex align-items-center justify-content-center">
-                                1
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="step-list">
+                            <div class="step-item d-flex">
+                                <div
+                                    class="step-item__number fw-semibold img-circle d-flex align-items-center justify-content-center">
+                                    1
+                                </div>
+                                <div class="step-item__content">
+                                    <p class="fw-semibold">TRAO ĐỔI</p>
+                                    <span class="text-small">Khách hàng đưa ra những nhu cầu, mong muốn về việc phát
+                                        triển
+                                        doanh nghiệp,
+                                        mô hình kinh doanh
+                                    </span>
+                                </div>
                             </div>
-                            <div class="step-item__content">
-                                <p class="fw-semibold">TRAO ĐỔI</p>
-                                <span class="text-small">Khách hàng đưa ra những nhu cầu, mong muốn về việc phát triển
-                                    doanh nghiệp,
-                                    mô hình kinh doanh
-                                </span>
+                            <div class="step-item d-flex">
+                                <div
+                                    class="step-item__number fw-semibold img-circle d-flex align-items-center justify-content-center">
+                                    2
+                                </div>
+                                <div class="step-item__content">
+                                    <p class="fw-semibold">TƯ VẤN</p>
+                                    <span class="text-small">Tiếp nhận thông tin và đưa ra ý tưởng, định hướng dịch vụ
+                                        phù
+                                        hợp với từng
+                                        ngành nghề, lĩnh vực
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="step-item d-flex">
-                            <div
-                                class="step-item__number fw-semibold img-circle d-flex align-items-center justify-content-center">
-                                2
+                            <div class="step-item d-flex">
+                                <div
+                                    class="step-item__number fw-semibold img-circle d-flex align-items-center justify-content-center">
+                                    3
+                                </div>
+                                <div class="step-item__content">
+                                    <p class="fw-semibold">THỐNG NHẤT</p>
+                                    <span class="text-small">Thống nhất dịch vụ phát triển cho web cũng như các kênh bỗ
+                                        trợ
+                                        khác cho việc
+                                        mở rộng marketing
+                                    </span>
+                                </div>
                             </div>
-                            <div class="step-item__content">
-                                <p class="fw-semibold">TƯ VẤN</p>
-                                <span class="text-small">Tiếp nhận thông tin và đưa ra ý tưởng, định hướng dịch vụ phù
-                                    hợp với từng
-                                    ngành nghề, lĩnh vực
-                                </span>
+                            <div class="step-item d-flex">
+                                <div
+                                    class="step-item__number fw-semibold img-circle d-flex align-items-center justify-content-center">
+                                    4
+                                </div>
+                                <div class="step-item__content">
+                                    <p class="fw-semibold">HỢP ĐỒNG</p>
+                                    <span class="text-small">Dựa trên nội dung công việc và hình thức dịch vụ đã thống
+                                        nhất,
+                                        thực hiện
+                                        hợp đồng kèm cam kết
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="step-item d-flex">
-                            <div
-                                class="step-item__number fw-semibold img-circle d-flex align-items-center justify-content-center">
-                                3
+                            <div class="step-item d-flex">
+                                <div
+                                    class="step-item__number fw-semibold img-circle d-flex align-items-center justify-content-center">
+                                    5
+                                </div>
+                                <div class="step-item__content">
+                                    <p class="fw-semibold">TRIỂN KHAI</p>
+                                    <span class="text-small">Tiến hành triển khai công việc theo định hướng ban đầu và
+                                        thường xuyên cập nhật
+                                        diễn biến, kết quả
+                                    </span>
+                                </div>
                             </div>
-                            <div class="step-item__content">
-                                <p class="fw-semibold">THỐNG NHẤT</p>
-                                <span class="text-small">Thống nhất dịch vụ phát triển cho web cũng như các kênh bỗ trợ
-                                    khác cho việc
-                                    mở rộng marketing
-                                </span>
-                            </div>
-                        </div>
-                        <div class="step-item d-flex">
-                            <div
-                                class="step-item__number fw-semibold img-circle d-flex align-items-center justify-content-center">
-                                4
-                            </div>
-                            <div class="step-item__content">
-                                <p class="fw-semibold">HỢP ĐỒNG</p>
-                                <span class="text-small">Dựa trên nội dung công việc và hình thức dịch vụ đã thống nhất,
-                                    thực hiện
-                                    hợp đồng kèm cam kết
-                                </span>
-                            </div>
-                        </div>
-                        <div class="step-item d-flex">
-                            <div
-                                class="step-item__number fw-semibold img-circle d-flex align-items-center justify-content-center">
-                                5
-                            </div>
-                            <div class="step-item__content">
-                                <p class="fw-semibold">TRIỂN KHAI</p>
-                                <span class="text-small">Tiến hành triển khai công việc theo định hướng ban đầu và
-                                    thường xuyên cập nhật
-                                    diễn biến, kết quả
-                                </span>
-                            </div>
-                        </div>
-                        <div class="step-item d-flex">
-                            <div
-                                class="step-item__number fw-semibold img-circle d-flex align-items-center justify-content-center">
-                                6
-                            </div>
-                            <div class="step-item__content">
-                                <p class="fw-semibold">BÀN GIAO</p>
-                                <span class="text-small">Theo dõi báo cáo và nghiệm thu kết quả công việc thông qua
-                                    những yêu cầu,
-                                    thống nhất ban đầu
-                                </span>
+                            <div class="step-item d-flex">
+                                <div
+                                    class="step-item__number fw-semibold img-circle d-flex align-items-center justify-content-center">
+                                    6
+                                </div>
+                                <div class="step-item__content">
+                                    <p class="fw-semibold">BÀN GIAO</p>
+                                    <span class="text-small">Theo dõi báo cáo và nghiệm thu kết quả công việc thông qua
+                                        những yêu cầu,
+                                        thống nhất ban đầu
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -229,7 +240,6 @@
             </div>
         </div>
     </section>
-
 
     <footer class="footer">
         <div class="container">

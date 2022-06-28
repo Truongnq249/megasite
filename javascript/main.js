@@ -5,7 +5,6 @@
             showSearchForm();
             menuMobile()
             footerAccordionMobile()
-            carousel()
             structureToggleMobile()
             backToTop()
         });
