@@ -44,7 +44,7 @@ function showSearchForm() {
 function menuMobile() {
     $('.header__bars').click(function () {
         $('.header__menu').toggleClass('active');
-        $('.overlay').addClass('active');
+        $('.overlay').toggleClass('active');
     })
     $('.overlay').click(function () {
         $('.header__menu').removeClass('active');
@@ -67,7 +67,6 @@ function footerAccordionMobile() {
 
 function carousel() {
     let el = $('.theme-list-carousel');
-
     let carousel;
     let carouselOptions = {
         margin: 30,
@@ -85,6 +84,7 @@ function carousel() {
             425: {
                 items: 2,
                 rows: 2,
+                margin: 20,
             },
             768: {
                 items: 3,

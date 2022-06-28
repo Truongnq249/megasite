@@ -118,9 +118,6 @@
   &__content {
     width: 44.5%;
     height: 100%;
-    @media screen and (max-width: 1199px) {
-      width: 50%;
-    }
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }
