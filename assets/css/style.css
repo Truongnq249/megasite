@@ -23,7 +23,7 @@
   font-display: swap; }
 @font-face {
   font-family: "Segoe UI";
-  src: url("../fonts/SegoeUI.woff2") format("woff2"), url("../fonts/SegoeUI.woff") format("woff");
+  src: url("../fonts/SEGOEUI.TTF") format("ttf");
   font-weight: 400;
   font-style: normal;
   font-display: swap; }
@@ -672,16 +672,16 @@ input:focus {
         .theme-filter__form .form-group {
           width: 100%;
           margin-bottom: 15px; } }
-  .theme-carousel-control {
+  .theme-list-control {
     margin-left: auto; }
     @media screen and (max-width: 1023px) {
-      .theme-carousel-control {
+      .theme-list-control {
         margin: 20px auto 0 auto;
         background-color: #e5e5e5;
         padding: 5px 10px; } }
-    .theme-carousel-control .theme-carousel-number {
+    .theme-list-control__number {
       margin-right: 12px; }
-  .theme-carousel-btn {
+  .theme-list-btn {
     width: 36px;
     height: 36px;
     background-color: #fff;
@@ -690,12 +690,12 @@ input:focus {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
-    .theme-carousel-btn:active {
+    .theme-list-btn:active {
       transform: scale(0.9); }
-    .theme-carousel-btn:not(:last-child) {
+    .theme-list-btn:not(:last-child) {
       margin-right: 4px; }
     @media (hover) {
-      .theme-carousel-btn:hover {
+      .theme-list-btn:hover {
         background-color: #eaeaea; } }
 
 .theme-list {

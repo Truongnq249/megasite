@@ -32,18 +32,18 @@
       }
     }
   }
-  &-carousel-control {
+  &-list-control {
     margin-left: auto;
     @media screen and (max-width: 1023px) {
       margin: 20px auto 0 auto;
       background-color: #e5e5e5;
       padding: 5px 10px;
     }
-    .theme-carousel-number {
+    &__number {
       margin-right: 12px;
     }
   }
-  &-carousel-btn {
+  &-list-btn {
     width: 36px;
     height: 36px;
     background-color: #fff;
