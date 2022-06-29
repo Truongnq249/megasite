@@ -160,6 +160,7 @@
         flex-wrap: nowrap;
         overflow: auto;
         scroll-snap-type: x mandatory;
+        margin-bottom: 20px;
     }
 
     .theme-list-inner>[class*='col'] {

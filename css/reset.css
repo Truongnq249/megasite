@@ -177,8 +177,8 @@ input:focus {
     outline: none;
 }
 
-.container {
-    @media (min-width: 1366px) {
+@media (min-width: 1366px) {
+    .container {
         width: 1250px !important;
     }
 }
