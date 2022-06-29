@@ -1,0 +1,226 @@
+/** GENERAL **/
+.section-title {
+  font-size: 3.2rem;
+  line-height: calc(43 / 32);
+  @media screen and (max-width: 1199px) {
+    font-size: 2.9rem;
+  }
+  @media screen and (max-width: 1023px) {
+    font-size: 2.5rem;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 2.3rem;
+  }
+  @media screen and (max-width: 424px) {
+    font-size: 2rem;
+  }
+}
+
+.section-desc {
+  font-size: 1.8rem;
+}
+.d-flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+/** TEXT **/
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.text-secondary {
+  color: var(--secondary-color) !important;
+}
+
+.text-regular {
+  font-size: 1.6rem;
+}
+
+.text-small {
+  font-size: 1.4rem;
+}
+
+/** SECTION **/
+.page-banner {
+  background-color: #f5f5f5;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  &-inner {
+    width: 100%;
+    padding: 100px 0 100px 0;
+    min-height: 700px;
+    @media screen and (max-width: 1199px) {
+      padding: 150px 0;
+    }
+    @media screen and (max-width: 1439px) {
+      min-height: 600px;
+    }
+    @media screen and (max-width: 1199px) {
+      min-height: 500px;
+    }
+    @media screen and (max-width: 1023px) {
+      min-height: 400px;
+      padding: 60px 0;
+    }
+    @media screen and (max-width: 767px) {
+      padding: 40px 0;
+      min-height: unset;
+    }
+  }
+  &__content {
+    width: 44.5%;
+    height: 100%;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  &__img {
+    width: 55.5%;
+  }
+  &__content,
+  &__img {
+    @media screen and (max-width: 1023px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  .section-title {
+    margin-bottom: 20px;
+  }
+  &__desc {
+    margin-bottom: 25px;
+  }
+  &__action {
+    a {
+      display: inline-block;
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+    }
+    &-link {
+      color: #000;
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+  }
+}
+
+/** GRID **/
+.gutter-y-30 {
+  --gutter: 30px;
+  margin-bottom: calc(var(--gutter) * -1);
+  & > [class*="col"] {
+    margin-bottom: var(--gutter);
+  }
+  @media screen and (max-width: 1023px) {
+    --gutter: 20px;
+  }
+}
+.col-lg-20p {
+  @media screen and (min-width: 1200px) {
+    width: 20%;
+  }
+}
+
+/** FORM **/
+.field-border {
+  width: 100%;
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
+  padding: 8px 12px;
+  color: #999999;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+  background-image: url("data:image/svg+xml,%3Csvg id='Th_Arrow_Solid_16px_999' data-name='Th_Arrow/ Solid/ 16px %23999' xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Crect id='BG_16x16_no_Color' data-name='BG 16x16 no Color' width='16' height='16' fill='none'/%3E%3Cpath id='Icon_material-arrow-drop-down' data-name='Icon material-arrow-drop-down' d='M10.5,15l6,6,6-6Z' transform='translate(-8.5 -10)' fill='%23999'/%3E%3C/svg%3E%0A");
+}
+
+.register-group {
+  .button {
+    margin-top: 24px;
+  }
+}
+
+/** BACKGROUND **/
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: -100px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 5555;
+  &:hover {
+    background-color: #c66500;
+  }
+  &.active {
+    right: 20px;
+  }
+}

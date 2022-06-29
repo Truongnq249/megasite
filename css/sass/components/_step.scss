@@ -1,0 +1,52 @@
+.register-group {
+  img {
+    @media screen and (max-width: 767px) {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+.step {
+  &-list {
+  }
+  &-item {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+    &__number {
+      width: 32px;
+      height: 32px;
+      flex: 0 0 auto;
+      background-color: var(--secondary-color);
+      color: #fff;
+      font-size: 1.8rem;
+      box-shadow: 0px 0px 0px 4px #006cb652;
+      &--blue {
+        background-color: #4ac816;
+        box-shadow: 0px 0px 0px 4px rgba(74, 200, 22, 0.28);
+      }
+      &--check {
+        &:after {
+          content: "";
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='18' viewBox='0 0 20 18'%3E%3Cpath id='Path_23442' data-name='Path 23442' d='M827.214,187.54c.361-.623.692-1.242,1.068-1.831a23.292,23.292,0,0,1,4.455-5.028,33.839,33.839,0,0,1,5.921-4.073c.19-.1.391-.176.556-.01a.653.653,0,0,1,.166.411.488.488,0,0,1-.18.317,32.408,32.408,0,0,0-6.1,7.174,31.892,31.892,0,0,0-4.115,9.5c-.01.036-.024.072-.031.109a.446.446,0,0,1-.811.2l-1.77-1.955q-3.376-3.726-6.75-7.453c-.036-.038-.071-.078-.107-.117a.448.448,0,0,1-.094-.5.43.43,0,0,1,.429-.269c.35,0,.7,0,1.048,0,1,0,1.992,0,2.988,0a.63.63,0,0,1,.523.243c.864,1.022,1.735,2.039,2.6,3.058C827.078,187.385,827.147,187.464,827.214,187.54Z' transform='translate(-819.38 -176.501)' fill='%23fff'/%3E%3C/svg%3E%0A");
+          width: 20px;
+          height: 18px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+    &__content {
+      padding-left: 17px;
+      p {
+        margin-bottom: 4px;
+      }
+      span {
+        color: var(--grey2);
+        line-height: 1.29;
+        display: inline-block;
+      }
+    }
+  }
+}
